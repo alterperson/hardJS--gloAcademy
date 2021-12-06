@@ -4,8 +4,7 @@ const week = ['Понедельник', 'Вторник', 'Среда', 'Чет�
 
 function task() {
   for (let i = 0; i < week.length; i++) {
-
-    if (i === 5 || i === 6) {
+    if (week[i] === 'Суббота' || week[i] === 'Воскресенье') {
       console.log(`%c ${week[i]}`, 'font-style: italic;');
     } else {
       console.log(week[i]);
